@@ -1,0 +1,143 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  margin: 0;
+  background-color: #120c1c;
+}
+
+main {
+  display: flex;
+  flex: 1 0 auto;
+}
+
+.sidebar {
+  flex: 0 0 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  background-color: #231b2e;
+}
+
+.sidebar .music-app-logo {
+  width: 240px;
+  height: 50px;
+  background-image: url(../img/logo-dark.svg);
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position-x: 20px;
+  background-position-y: 30%;
+}
+
+.sidebar .category-item {
+  padding-left: 20px;
+  font-weight: bold;
+}
+
+.sidebar .category-item .fa {
+  font-size: 1.5em;
+  margin-right: 15px;
+}
+
+.sidebar .sidebar-line {
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.1);
+  width: 100%;
+}
+
+.album-music {
+  flex: 1 1 auto;
+  background-color: #231b2e;
+  display: flex;
+  flex-direction: column;
+}
+
+.album-music .music-head {
+  flex: 0 0 280px;
+  background-color: #120c1c;
+  display: flex;
+  padding: 40px;
+}
+
+.music-head .music-info {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  font-weight: 300;
+  padding-left: 40px;
+}
+
+.music-info .music-details {
+  margin-bottom: auto;
+}
+
+.music-info .music-title {
+  font-size: 1.8em;
+  margin: 0 0 10px;
+}
+
+.music-controls .control-item {
+  margin-right: 15px;
+}
+
+.album-music .music-list {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  font-weight: 300;
+}
+
+.music-list .music-item {
+  display: flex;
+  padding: 0 20px;
+}
+
+.music-item:hover {
+  background-color: hsla(0, 0%, 100%, 0.1);
+}
+
+.music-item p {
+  flex: 0 0 25%;
+}
+
+.music-item:nth-child(2n) {
+  background-color: #170f23;
+}
+
+.music-item p .sound-cloud {
+  border: 1px solid #170f23;
+  font-size: 0.6em;
+  padding: 3px;
+}
+
+footer {
+  display: flex;
+  flex: 0 0 100px;
+  background-color: #120c1c;
+}
+
+.song-playing {
+  display: flex;
+  padding: 10px 10px 15px;
+}
+
+.song-playing img {
+  width: 100px;
+}
+
+.song-playing-info {
+  padding-left: 15px;
+}
+
+.song-controls {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+}
